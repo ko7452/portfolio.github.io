@@ -1,0 +1,65 @@
+html {
+  scroll-behavior: smooth;
+}
+.header-class {
+  position: fixed;
+  width: 100vw;
+}
+.snip1275 {
+  font-family: "Raleway", Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background: rgba(0, 0, 0, 0.6);
+  height: 80px;
+  top: 0;
+}
+.snip1275 * {
+  box-sizing: border-box;
+  transition: all 0.35s ease;
+  margin: 0px;
+}
+.snip1275 li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0.7em 1.5em;
+  padding: 1rem 2rem 1rem 0;
+}
+.snip1275 a {
+  padding: 0.3em 0;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  text-decoration: none;
+}
+.snip1275 a:before,
+.snip1275 a:after {
+  height: 3px;
+  position: absolute;
+  content: "";
+  transition: all 0.35s ease;
+  background-color: #fe2e2e;
+  width: 0;
+}
+.snip1275 a:before {
+  top: 0;
+  right: 0;
+}
+.snip1275 a:after {
+  bottom: 0;
+  left: 0;
+}
+.snip1275 a:hover,
+.snip1275 .current a {
+  color: #ffffff;
+}
+.snip1275 a:hover:before,
+.snip1275 .current a:before,
+.snip1275 a:hover:after,
+.snip1275 .current a:after {
+  width: 100%;
+}
+/* Demo purposes only */
+body {
+  background-color: #f7f1f1;
+}

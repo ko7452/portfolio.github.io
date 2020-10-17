@@ -1,0 +1,56 @@
+.Home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../images/suits.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+  width: 100%;
+}
+
+.typer-text {
+  font-family: Noto Sans KR, sans-Pacifico;
+  font-size: 4vw;
+  /* border-right: 0.1em solid #fff; */
+  white-space: pre;
+  line-height: 1em;
+  letter-spacing: 0.1rem;
+  padding-top: 0.2em;
+  overflow: hidden;
+  animation: typingAni 3s steps(50, end) 1;
+}
+.typer-text ::after {
+  width: 20px;
+  content: "";
+  display: block;
+  font-family: Noto Sans KR, sans-Pacifico;
+  font-size: 4vw;
+  border-right: 0.1em solid #fff;
+  white-space: pre;
+  line-height: 1em;
+  letter-spacing: 0.1rem;
+  padding-top: 0.2em;
+  animation: blink 1s step-end infinite;
+}
+@keyframes typingAni {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 150px;
+  }
+}
+@keyframes cursor {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
